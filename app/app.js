@@ -8,3 +8,8 @@ setInterval(function () {
     counter = 1;
   }
 }, 5000);
+
+$(".produto-galeria-index").click(function () {
+  window.location = $(this).find("a").attr("href");
+  return false;
+});

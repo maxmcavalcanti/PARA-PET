@@ -1,9 +1,13 @@
+@import url('http://fonts.cdnfonts.com/css/bahnschrift');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: 
   scroll-behavior: smooth;
+  font-family: 'Bahnschrift', sans-serif;
+
 }
 
 a {
@@ -51,6 +55,12 @@ header {
   margin: 0 25px;
   color: black;
   background-color: #ffd500;
+}
+.botaoMenu a {
+  padding: 0;
+}
+.botaoMenu:hover {
+  cursor: pointer;
 }
 
 .container {
@@ -116,7 +126,6 @@ input[type="search"]:focus {
   height: 300px;
   margin-top: -20px;
   justify-content: center;
-  border-radius: 10px;
   overflow: hidden;
   align-items: center;
 }
@@ -124,7 +133,7 @@ input[type="search"]:focus {
 .carrossel-produtos {
   display: flex;
   width: 500%;
-  height: 350px;
+  height: 300px;
 }
 
 .carrossel-produtos input {
@@ -138,7 +147,7 @@ input[type="search"]:focus {
 
 .slide img {
   width: 100%;
-  height: 350px;
+  height: 300px;
 }
 
 /* css para navegação manual */
@@ -216,9 +225,65 @@ input[type="search"]:focus {
 
 /* Galeria de produtos */
 
+.container-galeria {
+  background-color: whitesmoke;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.galeria-produtos-index {
+  width: 100%;
+  max-width: 1100px;
+  height: 100%;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.produto-galeria-index {
+  width: 200px;
+  height: 30%;
+  margin: 020px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0;
+  padding-bottom: 10px;
+}
+.produto-galeria-index h2,
+h3 {
+  font-size: 0.8em;
+  text-align: left;
+  padding: 10px 10px;
+  align-self: ce;
+}
+.produto-galeria-index h3 {
+  font-size: 1.2rem;
+}
+.produto-galeria-index a {
+  padding: 0;
+}
+.img-produto-index {
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  padding: 0;
+  border-radius: 10px;
+}
 /* Footer Style */
 
 .footerSite {
+  border-top: 1px solid whitesmoke;
   display: flex;
   align-items: flex-start;
   gap: 0.5em;
