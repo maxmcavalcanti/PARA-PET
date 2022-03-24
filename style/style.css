@@ -113,7 +113,7 @@ input[type="search"]:focus {
 .container-carrossel-produtos {
   background: #8abfc2;
   width: 100%;
-  height: auto;
+  height: 300px;
   margin-top: -20px;
   justify-content: center;
   border-radius: 10px;
@@ -124,7 +124,7 @@ input[type="search"]:focus {
 .carrossel-produtos {
   display: flex;
   width: 500%;
-  height: auto;
+  height: 350px;
 }
 
 .carrossel-produtos input {
@@ -138,7 +138,7 @@ input[type="search"]:focus {
 
 .slide img {
   width: 100%;
-  height: auto;
+  height: 350px;
 }
 
 /* css para navegação manual */
