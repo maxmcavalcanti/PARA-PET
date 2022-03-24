@@ -1,63 +1,211 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
     <title>PARA PETS</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="menuSuperior">
-
+      <div class="menuSuperior">
         <div class="logo">
-            <a href="linkPrincipal"><img src="imagens/logo.png" alt="Logo do site PARA PETS" height="100px" width="250px"></a>
+          <a href="linkPrincipal"
+            ><img
+              src="imagens/logo.png"
+              alt="Logo do site PARA PETS"
+              height="100px"
+              width="250px"
+          /></a>
         </div>
 
         <div class="container">
-            <form>
-            <input type="search" placeholder="Pesquisar produto">
+          <form>
+            <input type="search" placeholder="Pesquisar produto" />
             <button type="submit">Search</button>
           </form>
-       </div>
+        </div>
 
-            <a href="linkLogin">
+        <div class="loginCarrinho">
+          <a href="linkLogin">
             <button class="botaoMenu">Login</button>
-            </a> 
-       
+          </a>
 
-        <a href="linkCarrinho"><img src="imagens/carrinho.png" alt="carrinho de compras" height="24px" width="24px"></a>
-
+          <a href="linkCarrinho"
+            ><img
+              src="imagens/carrinho.png"
+              alt="carrinho de compras"
+              height="24px"
+              width="24px"
+          /></a>
         </div>
+      </div>
+      <div class="menuInferior">
+        <a href="linkCachorro">
+          <button class="botaoMenu">Cachorros</button>
+        </a>
 
-        <div class="menuInferior">
-            <a href="linkCachorro">
-            <button class="botaoMenu">Cachorros</button>
-            </a> 
+        <a href="linkGato">
+          <button class="botaoMenu">Gatos</button>
+        </a>
 
-            <a href="linkGato">
-            <button class="botaoMenu">Gatos</button>
-            </a> 
-
-            <a href="linkPromocoes">
-            <button class="botaoMenu">Promoções</button>
-            </a> 
-
-                
-        </div>
+        <a href="linkPromocoes">
+          <button class="botaoMenu">Promoções</button>
+        </a>
+      </div>
     </header>
+    <br />
 
+    <main>
+      <!-- Carrosel de produtos -->
+      <div class="container-carrossel-produtos">
+        <div class="carrossel-produtos">
+          <!-- radio buttons -->
+          <input type="radio" name="radio-botao" id="radio1" />
+          <input type="radio" name="radio-botao" id="radio2" />
+          <input type="radio" name="radio-botao" id="radio3" />
+          <input type="radio" name="radio-botao" id="radio4" />
 
+          <!-- carrossel imagens -->
 
-<main>
+          <div class="slide primeiro">
+            <img src="/imagens/carrossel/img-teste-1.gif" alt="" />
+          </div>
+          <div class="slide segundo">
+            <img src="/imagens/carrossel/img-teste-2.gif" alt="" />
+          </div>
+          <div class="slide terceiro">
+            <img src="/imagens/carrossel/img-teste-3.gif" alt="" />
+          </div>
+          <div class="slide quarto">
+            <img src="/imagens/carrossel/img-teste-4.gif" alt="" />
+          </div>
+        </div>
+      </div>
 
+      <!-- navegação automatica -->
 
+      <div class="navegacao-automatica">
+        <div class="auto-botao1"></div>
+        <div class="auto-botao2"></div>
+        <div class="auto-botao3"></div>
+        <div class="auto-botao4"></div>
+      </div>
 
+      <!-- navegação manual -->
 
-</main>
+      <div class="navegacao-manual">
+        <label for="radio1" class="botao-manual"></label>
+        <label for="radio2" class="botao-manual"></label>
+        <label for="radio3" class="botao-manual"></label>
+        <label for="radio4" class="botao-manual"></label>
+      </div>
 
+      <!-- Galeria de produtos -->
+      <div class="container-galeria-anuncios">
+        <div class="galeria-produtos-index">
+          <div class="produto-galeria-index"></div>
+          <div class="produto-galeria-index"></div>
+          <div class="produto-galeria-index"></div>
+          <div class="produto-galeria-index"></div>
+        </div>
 
-    
-</body>
+        <!-- anuncios index -->
+
+        <div class="anuncios-index">
+          <div class="anuncio-index"></div>
+          <div class="anuncio-index"></div>
+          <div class="anuncio-index"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footerSite">
+      <div class="newsletter">
+        <h4>Como podemos ajudar você?</h4>
+        <p>Acompanhe todas novidades e promoções.</p>
+        <form action="confirmarNewsletter">
+          <input
+            type="email"
+            placeholder="Digite aqui seu email."
+            required="required"
+            class="emailNewsletter"
+            name="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          />
+          <input type="submit" value="Confirmar" class="botaoConfirmar" />
+        </form>
+      </div>
+
+      <div class="politicas">
+        <h4>Políticas</h4>
+        <ul>
+          <a href="linkPrivacidade">Aviso de privacidade</a>
+        </ul>
+        <ul>
+          <a href="linkCookies">Política de Cookies</a>
+        </ul>
+        <ul>
+          <a href="linkEntregaDevolucao">Política de entrega e devolução</a>
+        </ul>
+        <ul>
+          <a href="linkPoliticaDeCompra">Política de compra</a>
+        </ul>
+      </div>
+
+      <div class="formasDePagamento">
+        <h4>Formas de pagamento</h4>
+        <div class="tiposPagamentos">
+          <img
+            src="imagens/cartaoMaster.png"
+            alt="cartão master card"
+            height="30px"
+            width="45px"
+          />
+          <img
+            src="imagens/cartaoVisa.png"
+            alt="cartão visa"
+            height="30px"
+            width="45px"
+          />
+          <img
+            src="imagens/boletoBancario.png"
+            alt="boleto"
+            height="30px"
+            width="45px"
+          />
+        </div>
+      </div>
+
+      <div class="redesSociais">
+        <h4>Siga nossas redes sociais</h4>
+        <div class="tiposRedesSociais">
+          <a href="linkInstagram"
+            ><img
+              src="imagens/logoInstagram.png"
+              alt="nosso instagram"
+              height="24px"
+              width="24px"
+          /></a>
+          <a href="linkFacebook"
+            ><img
+              src="imagens/logoFacebook.png"
+              alt="nosso facebook"
+              height="24px"
+              width="24px"
+          /></a>
+          <a href="linkWhatsapp"
+            ><img
+              src="imagens/logoWhatsapp.png"
+              alt="nosso whatsapp"
+              height="24px"
+              width="24px"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/app/app.js"></script>
+  </body>
 </html>
