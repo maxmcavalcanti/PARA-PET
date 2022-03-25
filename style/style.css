@@ -260,8 +260,7 @@ input[type="search"]:focus {
   padding: 0;
   padding-bottom: 10px;
 }
-.produto-galeria-index h2,
-h3 {
+.produto-galeria-index h2, h3 {
   font-size: 0.8em;
   text-align: left;
   padding: 10px 10px;
@@ -294,9 +293,7 @@ h3 {
   text-align: left;
 }
 
-.footerSite h4,
-p,
-a {
+.footerSite h4, p, a {
   padding-bottom: 5px;
 }
 .newsletter {
