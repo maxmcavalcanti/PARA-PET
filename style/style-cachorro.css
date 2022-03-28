@@ -397,12 +397,18 @@ input[type="e-mail"]::placeholder {
     }
     .container-galeria {
       padding: 0;
-      margin-top: -20px;
     }
     .container-galeria .margin-cachorro {
       margin-top: 0;
     }
 }
+
+@media screen and (max-width:670px){
+    .container-filtros{
+        display: none;
+    }
+  
+  }
 
 @media screen and (max-width:500px){
   .menuInferior {
