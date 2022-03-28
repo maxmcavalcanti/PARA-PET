@@ -61,6 +61,8 @@ header {
 }
 .botaoMenu:hover {
   cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #ff9100;
 }
 
 .container {
@@ -244,6 +246,9 @@ input[type="search"]:focus {
   flex-wrap: wrap;
   justify-content: center;
 }
+.hide {
+  display:none;
+}
 
 .produto-galeria-index {
   width: 200px;
@@ -251,9 +256,8 @@ input[type="search"]:focus {
   margin: 020px;
   background-color: white;
   border-radius: 10px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-
+  box-shadow: rgba(50, 50, 93, 0.25) 4px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 4px 3px 7px -3px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -278,6 +282,18 @@ input[type="search"]:focus {
   align-self: center;
   padding: 0;
   border-radius: 10px;
+}
+
+.scroll-to-top {
+  position: fixed;
+  inset: auto 0.5rem 0.5rem auto ;
+  color: #fff2e7;
+  background: #60babf;
+  padding: 7px;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  scroll-behavior: smooth;
+
 }
 /* Footer Style */
 
