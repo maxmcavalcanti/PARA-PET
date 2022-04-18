@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link href="http://cdn.phpoll.com/css/animate.css" rel="stylesheet" />
+
+    <script
+      src="https://kit.fontawesome.com/63ae39e7b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <title>PARA PETS</title>
+  </head>
+  <body>
+    <!-- Inicio Header -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div
+        class="container px-4 px-lg-5 d-flex align-items-center justify-content-between"
+      >
+        <div class="logo">
+          <a href="./index.html"
+            ><img
+              src="imagens/logo.png"
+              alt="Logo do site PARA PETS"
+              height="100px"
+              width="250px"
+          /></a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse flex-grow-0"
+          id="navbarSupportedContent"
+        >
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 align-items-center"
+          >
+            <li class="nav-item d-block align-self-center">
+              <a class="nav-link active" aria-current="page" href="#!"
+                >Início</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active dropdown-toggle"
+                href="paginaProdutos.html"
+                data-bs-toggle="dropdown"
+              >
+                Produtos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"> Cachorros</a></li>
+                <li><a class="dropdown-item" href="#"> Gatos</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item d-block align-self-center">
+              <form>
+                <input type="search" placeholder="Pesquisar produto" />
+              </form>
+            </li>
+            <li class="dropdown">
+              <a
+                href="http://phpoll.com/register"
+                class="dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Register <span class="caret"></span
+              ></a>
+              <ul
+                class="dropdown-menu dropdown-lr animated flipInX"
+                role="menu"
+              >
+                <div class="col-lg-12">
+                  <div class="text-center">
+                    <h3><b>Register</b></h3>
+                  </div>
+                  <form
+                    id="ajax-register-form"
+                    action="http://phpoll.com/register/process"
+                    method="post"
+                    role="form"
+                    autocomplete="off"
+                  >
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        tabindex="1"
+                        class="form-control"
+                        placeholder="Username"
+                        value=""
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        tabindex="1"
+                        class="form-control"
+                        placeholder="Email Address"
+                        value=""
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        tabindex="2"
+                        class="form-control"
+                        placeholder="Password"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="password"
+                        name="confirm-password"
+                        id="confirm-password"
+                        tabindex="2"
+                        class="form-control"
+                        placeholder="Confirm Password"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-xs-6 col-xs-offset-3">
+                          <input
+                            type="submit"
+                            name="register-submit"
+                            id="register-submit"
+                            tabindex="4"
+                            class="form-control btn btn-info"
+                            value="Register Now"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <input
+                      type="hidden"
+                      class="hide"
+                      name="token"
+                      id="token"
+                      value="7c6f19960d63f53fcd05c3e0cbc434c0"
+                    />
+                  </form>
+                </div>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a
+                href="http://phpoll.com/login"
+                class="dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Log In <span class="caret"></span
+              ></a>
+              <ul
+                class="dropdown-menu dropdown-lr animated slideInRight"
+                role="menu"
+              >
+                <div class="col-lg-12">
+                  <div class="text-center">
+                    <h3><b>Log In</b></h3>
+                  </div>
+                  <form
+                    id="ajax-login-form"
+                    action="http://phpoll.com/login/process"
+                    method="post"
+                    role="form"
+                    autocomplete="off"
+                  >
+                    <div class="form-control">
+                      <label for="username">Username</label>
+                      <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        tabindex="1"
+                        class="form-control"
+                        placeholder="Username"
+                        value=""
+                        autocomplete="off"
+                      />
+                    </div>
+
+                    <div class="form-control">
+                      <label for="password">Password</label>
+                      <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        tabindex="2"
+                        class="form-control"
+                        placeholder="Password"
+                        autocomplete="off"
+                      />
+                    </div>
+
+                    <div class="form-control">
+                      <div class="col">
+                        <div class="col-xs-7">
+                          <input
+                            type="checkbox"
+                            tabindex="3"
+                            name="remember"
+                            id="remember"
+                          />
+                          <label for="remember"> Remember Me</label>
+                        </div>
+                        <div class="col-xs-5 pull-right">
+                          <input
+                            type="submit"
+                            name="login-submit"
+                            id="login-submit"
+                            tabindex="4"
+                            class="form-control btn btn-success"
+                            value="Log In"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-control">
+                      <div class="col">
+                        <div class="col-lg-12">
+                          <div class="text-center">
+                            <a
+                              href="http://phpoll.com/recover"
+                              tabindex="5"
+                              class="forgot-password"
+                              >Forgot Password?</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <input
+                      type="hidden"
+                      class="hide"
+                      name="token"
+                      id="token"
+                      value="a465a2791ae0bae853cf4bf485dbe1b6"
+                    />
+                  </form>
+                </div>
+              </ul>
+            </li>
+
+            <!-- <div class="container_login">
+                <div class="login">
+                  <button class="botaoMenu">Login</button>
+                </div>
+                <div class="criarConta">
+                  <a href="#">Criar conta</a>
+                </div>
+              </div> -->
+            <!-- </li>
+            <li class="nav-item d-block align-self-center">
+              <button type="submit">
+                <i class="bi bi-cart-fill"></i>
+              </button>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Final Header-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
