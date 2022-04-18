@@ -25,11 +25,15 @@ nav {
   align-content: center;
   width: 100%;
 }
-.login button {
-  width: 100%;
+.login {
+  display: flex;
+  justify-content: center;
 }
-
+.navbar-collapse {
+}
 .criarConta {
+  display: flex;
+  justify-content: center;
   font-size: 0.7em;
 }
 .nav-item {
@@ -128,9 +132,9 @@ button[type="submit"] {
   border: 1px solid transparent;
   border-radius: inherit;
   cursor: pointer;
-  opacity: 0.7;
   width: 32px;
   height: 32px;
+  background-color: transparent;
 }
 
 button[type="submit"]:hover {
@@ -481,7 +485,8 @@ input[type="e-mail"]::placeholder {
   .container-carrossel-produtos,
   .carrossel-produtos,
   .navegacao--automatica,
-  .botao-manual {
+  .botao-manual,
+  .vantagens {
     display: none;
   }
   .container-galeria {
