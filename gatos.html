@@ -4,362 +4,229 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/style.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <title>PARA PETS</title>
+    <title>PARAPETS - Produtos Gatos</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
   </head>
   <body>
-    <header>
-      <div class="menuSuperior">
-        <div class="logo">
-          <a href="./index.html"
-            ><img
-              src="imagens/logo.png"
-              alt="Logo do site PARA PETS"
-              height="100px"
-              width="250px"
-          /></a>
-        </div>
-
-        <div class="container">
-          <form>
-            <input type="search" placeholder="Pesquisar produto" />
-            <button type="submit">Search</button>
-          </form>
-        </div>
-
-        <div class="loginCarrinho">
-          <a href="linkLogin">
-            <button class="botaoMenu">Login</button>
-          </a>
-
-          <a href="linkCarrinho"
-            ><img
-              src="imagens/carrinho.png"
-              alt="carrinho de compras"
-              height="24px"
-              width="24px"
-          /></a>
-        </div>
-      </div>
-      <div class="menuInferior">
-        <a href="./cachorros.html">
-          <button class="botaoMenu">Cachorros</button>
-        </a>
-
-        <a href="./gatos.html">
-          <button class="botaoMenu">Gatos</button>
-        </a>
-
-        <a href="linkPromocoes">
-          <button class="botaoMenu">Promoções</button>
-        </a>
-      </div>
-    </header>
-
+    <div id="header"></div>
+    <!-- Inicio Main -->
     <main>
-      
       <!-- Galeria de produtos -->
 
       <div class="container-galeria">
+        <div class="container-filtros">
+          <h2>FILTRAR PRODUTOS</h2>
+          <div class="categoria-filtro">
+            <h3>CATEGORIAS</h3>
+            <a href="">Ração</a>
+            <a href="">Pestiscos</a>
+            <a href="">Brinquedos</a>
+            <a href="">Higiene</a>
+            <a href="">Transporte</a>
+          </div>
+          <div class="categoria-filtro">
+            <h3>MARCAS</h3>
+            <a href="">Premier</a>
+            <a href="">Golden</a>
+            <a href="">ND</a>
+            <a href="">Gran Plus</a>
+            <a href="">Hills</a>
+            <a href="">Origens</a>
+            <a href="">Whiskas</a>
+          </div>
+          <div class="categoria-filtro">
+            <h3>LINHA</h3>
+            <a href="">Super Premium</a>
+            <a href="">Premium</a>
+            <a href="">Premium Especial</a>
+          </div>
+          <div class="categoria-filtro">
+            <h3>PORTE</h3>
+            <a href="">Pequeno</a>
+            <a href="">Médio</a>
+            <a href="">Grande</a>
+            <a href="">Mini</a>
+            <a href="">Gigante</a>
+          </div>
+          <div class="categoria-filtro">
+            <h3>IDADE</h3>
+            <a href="">Adulto</a>
+            <a href="">Filhote</a>
+            <a href="">Sênior</a>
+          </div>
+        </div>
         <div class="galeria-produtos-index">
           <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
+            <a href="./produtoGato.html">
             <img
               src="./imagens/gato/racao/Gato-castrado-75kg.jpg"
-              alt=""
+              alt="ração premier seleção natural para gatos castrados, frango korin, 1,5 quilos"
               srcset=""
               class="img-produto-index"
-            />
+            /></a>
             <h2>
               Ração Premier Seleção Natural Gatos Castrados Frango Korin 1,5 kg
             </h2>
             <h3>R$ 45,70</h3>
           </div>
           <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
+            <a href="./produtoGato.html">
             <img
               src="./imagens/gato/racao/Gato-castrado-75kg.jpg"
-              alt=""
+              alt="ração premier seleção natural para gatos castrados, frango korin, 1,5 quilos"
               srcset=""
               class="img-produto-index"
-            />
+            /></a>
             <h2>
               Ração Premier Seleção Natural Gatos Castrados Frango Korin 1,5 kg
             </h2>
             <h3>R$ 45,70</h3>
           </div>
           <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
+            <a href="./produtoGato.html">
             <img
               src="./imagens/gato/racao/Gato-castrado-75kg.jpg"
-              alt=""
+              alt="ração premier seleção natural para gatos castrados, frango korin, 1,5 quilos"
               srcset=""
               class="img-produto-index"
-            />
+            /></a>
             <h2>
               Ração Premier Seleção Natural Gatos Castrados Frango Korin 1,5 kg
             </h2>
             <h3>R$ 45,70</h3>
           </div>
           <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
+            <a href="./produtoGato.html">
             <img
               src="./imagens/gato/racao/Gato-castrado-75kg.jpg"
-              alt=""
+              alt="ração premier seleção natural para gatos castrados, frango korin, 1,5 quilos"
               srcset=""
               class="img-produto-index"
-            />
+            /></a>
             <h2>
               Ração Premier Seleção Natural Gatos Castrados Frango Korin 1,5 kg
             </h2>
             <h3>R$ 45,70</h3>
           </div>
           <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
+            <a href="./produtoGato.html">
             <img
               src="./imagens/gato/racao/Gato-castrado-75kg.jpg"
-              alt=""
+              alt="ração premier seleção natural para gatos castrados, frango korin, 1,5 quilos"
               srcset=""
               class="img-produto-index"
-            />
+            /></a>
             <h2>
               Ração Premier Seleção Natural Gatos Castrados Frango Korin 1,5 kg
             </h2>
             <h3>R$ 45,70</h3>
           </div>
           <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
+            <a href="./produtoGato.html">
             <img
               src="./imagens/gato/racao/Gato-castrado-75kg.jpg"
-              alt=""
+              alt="ração premier seleção natural para gatos castrados, frango korin, 1,5 quilos"
               srcset=""
               class="img-produto-index"
-            />
+            /></a>
             <h2>
               Ração Premier Seleção Natural Gatos Castrados Frango Korin 1,5 kg
             </h2>
             <h3>R$ 45,70</h3>
           </div>
           <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
+            <a href="./produtoGato.html">
             <img
               src="./imagens/gato/racao/Gato-castrado-75kg.jpg"
-              alt=""
+              alt="ração premier seleção natural para gatos castrados, frango korin, 1,5 quilos"
               srcset=""
               class="img-produto-index"
-            />
+            /></a>
             <h2>
               Ração Premier Seleção Natural Gatos Castrados Frango Korin 1,5 kg
             </h2>
             <h3>R$ 45,70</h3>
           </div>
           <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
+            <a href="./produtoGato.html">
             <img
               src="./imagens/gato/racao/Gato-castrado-75kg.jpg"
-              alt=""
+              alt="ração premier seleção natural para gatos castrados, frango korin, 1,5 quilos"
               srcset=""
               class="img-produto-index"
-            />
+            /></a>
             <h2>
               Ração Premier Seleção Natural Gatos Castrados Frango Korin 1,5 kg
             </h2>
             <h3>R$ 45,70</h3>
           </div>
           <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
+            <a href="./produtoGato.html">
             <img
               src="./imagens/gato/racao/Gato-castrado-75kg.jpg"
-              alt=""
+              alt="ração premier seleção natural para gatos castrados, frango korin, 1,5 quilos"
               srcset=""
               class="img-produto-index"
-            />
+            /></a>
             <h2>
               Ração Premier Seleção Natural Gatos Castrados Frango Korin 1,5 kg
             </h2>
             <h3>R$ 45,70</h3>
           </div>
           <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
+            <a href="./produtoGato.html">
             <img
               src="./imagens/gato/racao/Gato-castrado-75kg.jpg"
-              alt=""
+              alt="ração premier seleção natural para gatos castrados, frango korin, 1,5 quilos"
               srcset=""
               class="img-produto-index"
-            />
+            /></a>
             <h2>
               Ração Premier Seleção Natural Gatos Castrados Frango Korin 1,5 kg
             </h2>
             <h3>R$ 45,70</h3>
           </div>
           <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
+            <a href="./produtoGato.html">
             <img
               src="./imagens/gato/racao/Gato-castrado-75kg.jpg"
-              alt=""
+              alt="ração premier seleção natural para gatos castrados, frango korin, 1,5 quilos"
               srcset=""
               class="img-produto-index"
-            />
-            <h2>
+            /></a>
+           <h2>
               Ração Premier Seleção Natural Gatos Castrados Frango Korin 1,5 kg
             </h2>
             <h3>R$ 45,70</h3>
           </div>
           <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
+            <a href="./produtoGato.html">
             <img
               src="./imagens/gato/racao/Gato-castrado-75kg.jpg"
-              alt=""
+              alt="ração premier seleção natural para gatos castrados, frango korin, 1,5 quilos"
               srcset=""
               class="img-produto-index"
-            />
+            /></a>
             <h2>
               Ração Premier Seleção Natural Gatos Castrados Frango Korin 1,5 kg
             </h2>
             <h3>R$ 45,70</h3>
-          </div>
-          <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
-            <img
-              src="./imagens/gato/racao/Gato-castrado-75kg.jpg"
-              alt=""
-              srcset=""
-              class="img-produto-index"
-            />
-            <h2>
-              Ração Premier Seleção Natural Gatos Castrados Frango Korin 1,5 kg
-            </h2>
-            <h3>R$ 45,70</h3>
-          </div>
-          <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
-            <img
-              src="./imagens/gato/racao/Gato-castrado-75kg.jpg"
-              alt=""
-              srcset=""
-              class="img-produto-index"
-            />
-            <h2>
-              Ração Premier Seleção Natural Gatos Castrados Frango Korin 1,5 kg
-            </h2>
-            <h3>R$ 45,70</h3>
-          </div>
-          <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
-            <img
-              src="./imagens/gato/racao/Gato-castrado-75kg.jpg"
-              alt=""
-              srcset=""
-              class="img-produto-index"
-            />
-            <h2>
-              Ração Premier Seleção Natural Gatos Castrados Frango Korin 1,5 kg
-            </h2>
-            <h3>R$ 45,70</h3>
-          </div>
-          <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
-            <img
-              src="./imagens/gato/racao/Gato-castrado-75kg.jpg"
-              alt=""
-              srcset=""
-              class="img-produto-index"
-            />
-            <h2>
-              Ração Premier Seleção Natural Gatos Castrados Frango Korin 1,5 kg
-            </h2>
-            <h3>R$ 40,70</h3>
           </div>
         </div>
       </div>
+      <a href="#" class="scroll-to-top"><i class="fa-solid fa-arrow-up"></i></a>
     </main>
-    <footer class="footerSite">
-      <div class="newsletter">
-        <h4>Como podemos ajudar você?</h4>
-        <p>Acompanhe todas novidades e promoções.</p>
-        <form action="confirmarNewsletter">
-          <input
-            type="email"
-            placeholder="Digite aqui seu email."
-            required="required"
-            class="emailNewsletter"
-            name="email"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-          />
-          <input type="submit" value="Confirmar" class="botaoConfirmar" />
-        </form>
-      </div>
-
-      <div class="politicas">
-        <h4>Políticas</h4>
-        <ul>
-          <a href="linkPrivacidade">Aviso de privacidade</a>
-        </ul>
-        <ul>
-          <a href="linkCookies">Política de Cookies</a>
-        </ul>
-        <ul>
-          <a href="linkEntregaDevolucao">Política de entrega e devolução</a>
-        </ul>
-        <ul>
-          <a href="linkPoliticaDeCompra">Política de compra</a>
-        </ul>
-      </div>
-
-      <div class="formasDePagamento">
-        <h4>Formas de pagamento</h4>
-        <div class="tiposPagamentos">
-          <img
-            src="imagens/cartaoMaster.png"
-            alt="cartão master card"
-            height="30px"
-            width="45px"
-          />
-          <img
-            src="imagens/cartaoVisa.png"
-            alt="cartão visa"
-            height="30px"
-            width="45px"
-          />
-          <img
-            src="imagens/boletoBancario.png"
-            alt="boleto"
-            height="30px"
-            width="45px"
-          />
-        </div>
-      </div>
-
-      <div class="redesSociais">
-        <h4>Siga nossas redes sociais</h4>
-        <div class="tiposRedesSociais">
-          <a href="linkInstagram" target="_blank"
-            ><img
-              src="imagens/logoInstagram.png"
-              alt="nosso instagram"
-              height="24px"
-              width="24px"
-          /></a>
-          <a href="linkFacebook" target="_blank"
-            ><img
-              src="imagens/logoFacebook.png"
-              alt="nosso facebook"
-              height="24px"
-              width="24px"
-          /></a>
-          <a href="linkWhatsapp" target="_blank"
-            ><img
-              src="imagens/logoWhatsapp.png"
-              alt="nosso whatsapp"
-              height="24px"
-              width="24px"
-          /></a>
-        </div>
-      </div>
-    </footer>
-
-    <script src="./app/app.js"></script>
+    <!-- Final Main -->
+    <div id="footer"></div>
   </body>
 </html>

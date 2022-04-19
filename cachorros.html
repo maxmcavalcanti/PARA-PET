@@ -4,422 +4,229 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/style-cachorro.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>PARAPETS - Produtos Cachorros</title>
     <script
-      src="https://kit.fontawesome.com/63ae39e7b1.js"
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
       crossorigin="anonymous"
     ></script>
-    <title>PARA PETS</title>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
   </head>
   <body>
-    <header>
-      <div class="menuSuperior">
-        <div class="logo">
-          <a href="./index.html"
-            ><img
-              src="imagens/logo.png"
-              alt="Logo do site PARA PETS"
-              height="100px"
-              width="250px"
-          /></a>
-        </div>
-
-        <div class="container-menu">
-          <form>
-            <input type="search" placeholder="Pesquisar produto" />
-            <button type="submit">Search</button>
-          </form>
-        </div>
-
-        <div class="loginCarrinho">
-          <a href="linkLogin">
-            <button class="botaoMenu">Login</button>
-          </a>
-
-          <a href="linkCarrinho"
-            ><img
-              src="imagens/carrinho.png"
-              alt="carrinho de compras"
-              height="24px"
-              width="24px"
-          /></a>
-        </div>
-      </div>
-      <div class="menuInferior">
-        <a href="./cachorros.html">
-          <button class="botaoMenu">Cachorros</button>
-        </a>
-
-        <a href="./gatos.html">
-          <button class="botaoMenu">Gatos</button>
-        </a>
-
-        <a href="linkPromocoes">
-          <button class="botaoMenu">Promoções</button>
-        </a>
-      </div>
-    </header>
-
+    <div id="header"></div>
+    <!-- Inicio Main -->
     <main>
       <!-- Galeria de produtos -->
 
       <div class="container-galeria">
         <div class="container-filtros">
           <h2>FILTRAR PRODUTOS</h2>
-          <h3>CATEGORIAS</h3>
-          <a href="">Ração</a>
-          <a href="">Pestiscos</a>
-          <a href="">Brinquedos</a>
-          <a href="">Higiene</a>
-          <a href="">Transporte</a>
-          <h3>MARCAS</h3>
-          <a href="">Premier</a>
-          <a href="">Golden</a>
-          <a href="">ND</a>
-          <a href="">Gran Plus</a>
-          <a href="">Hills</a>
-          <a href="">Origens</a>
-          <a href="">Whiskas</a>
-          <h3>LINHA</h3>
-          <a href="">Super Premium</a>
-          <a href="">Premium</a>
-          <a href="">Premium Especial</a>
-          <h3>PORTE</h3>
-          <a href="">Pequeno</a>
-          <a href="">Médio</a>
-          <a href="">Grande</a>
-          <a href="">Mini</a>
-          <a href="">Gigante</a>
-          <h3>IDADE</h3>
-          <a href="">Adulto</a>
-          <a href="">Filhote</a>
-          <a href="">Sênior</a>
+          <div class="categoria-filtro">
+            <h3>CATEGORIAS</h3>
+            <a href="">Ração</a>
+            <a href="">Pestiscos</a>
+            <a href="">Brinquedos</a>
+            <a href="">Higiene</a>
+            <a href="">Transporte</a>
+          </div>
+          <div class="categoria-filtro">
+            <h3>MARCAS</h3>
+            <a href="">Premier</a>
+            <a href="">Golden</a>
+            <a href="">ND</a>
+            <a href="">Gran Plus</a>
+            <a href="">Hills</a>
+            <a href="">Origens</a>
+            <a href="">Whiskas</a>
+          </div>
+          <div class="categoria-filtro">
+            <h3>LINHA</h3>
+            <a href="">Super Premium</a>
+            <a href="">Premium</a>
+            <a href="">Premium Especial</a>
+          </div>
+          <div class="categoria-filtro">
+            <h3>PORTE</h3>
+            <a href="">Pequeno</a>
+            <a href="">Médio</a>
+            <a href="">Grande</a>
+            <a href="">Mini</a>
+            <a href="">Gigante</a>
+          </div>
+          <div class="categoria-filtro">
+            <h3>IDADE</h3>
+            <a href="">Adulto</a>
+            <a href="">Filhote</a>
+            <a href="">Sênior</a>
+          </div>
         </div>
         <div class="galeria-produtos-index">
           <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
+            <a href="./produtoCachorro.html"></a>
             <img
-              src="./imagens/cachorro/racao/Premier-Caes-hipoalergenica-cordeiro-e-arroz-101kg.jpg"
-              alt=""
+              src="./imagens/cachorro/racao/racao-adulto-special-15kg-golden-3310549-15kg.jpg"
+              alt="ração golden adulto, 15 quilos"
               srcset=""
               class="img-produto-index"
             />
             <h2>
-              Ração Premier Nutrição Clínica Cães Hipoalergênico Pequeno Porte
-              Cordeiro e Arroz 10,1kg
+              Ração Golden Special para Cães Adultos Frango e Carne 15 kg
             </h2>
-            <h3>R$ 285,70</h3>
-          </div>
-          <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
-            <img
-              src="./imagens/cachorro/racao/racao-adulto-special-15kg-golden-3310549-20kg.jpg"
-              alt=""
-              srcset=""
-              class="img-produto-index"
-            />
-            <h2>Ração Golden Special para Cães Adultos Frango e Carne 20kg</h2>
-            <h3>R$ 174,90</h3>
-          </div>
-          <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
-            <img
-              src="./imagens/cachorro/racao/Racao-para-Caes-Adultos-Golden-Selecao-Natural-Abobora-12kg.jpg"
-              alt=""
-              srcset=""
-              class="img-produto-index"
-            />
-            <h2>
-              Ração Golden Seleção Natural Cães Adultos Frango, Abóbora e
-              Alecrim 12kg
-            </h2>
-            <h3>R$ 209,59</h3>
-          </div>
-          <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
-            <img
-              src="./imagens/cachorro/racao/racao-golden-formula-senior-frango-e-arroz-15kg.jpg"
-              alt=""
-              srcset=""
-              class="img-produto-index"
-            />
-            <h2>Ração Golden Fórmula Sênior Frango e Arroz 15kg</h2>
-            <br />
             <h3>R$ 145,30</h3>
           </div>
           <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
+            <a href="./produtoCachorro.html">
             <img
-              src="./imagens/cachorro/racao/racao-premier-ambientes-internos-cao-senior-3663697-1kg.jpg"
-              alt=""
+              src="./imagens/cachorro/racao/racao-adulto-special-15kg-golden-3310549-15kg.jpg"
+              alt="ração golden adulto, 15 quilos"
               srcset=""
               class="img-produto-index"
-            />
-            <h2>Ração Premier Ambientes Internos Raças Pequenas Sênior 1kg</h2>
-            <h3>R$ 44,90</h3>
-          </div>
-          <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
-            <img
-              src="./imagens/cachorro/racao/racao-premier-caes-adultos-ambientes-internos-3798029-75kg.jpg"
-              alt=""
-              srcset=""
-              class="img-produto-index"
-            />
+            /></a>
             <h2>
-              Ração Premier Ambientes Internos Adultos Raças Pequenas Frango
-              7,5kg
+              Ração Golden Special para Cães Adultos Frango e Carne 15 kg
             </h2>
-            <h3>R$ 190,90</h3>
+            <h3>R$ 145,30</h3>
           </div>
           <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
+            <a href="./produtoCachorro.html">
             <img
-              src="./imagens/cachorro/racao/racao-premier-formula-caes-adultos-racas-medias-sabor-frango-20kg-frontal.jpg"
-              alt=""
+              src="./imagens/cachorro/racao/racao-adulto-special-15kg-golden-3310549-15kg.jpg"
+              alt="ração golden adulto, 15 quilos"
               srcset=""
               class="img-produto-index"
-            />
+            /></a>
             <h2>
-              Ração Premier Fórmula para Cães Adultos de Porte Médias Sabor
-              Frango 20kg
+              Ração Golden Special para Cães Adultos Frango e Carne 15 kg
             </h2>
-            <h3>R$ 289,90</h3>
+            <h3>R$ 145,30</h3>
           </div>
           <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
+            <a href="./produtoCachorro.html">
             <img
-              src="./imagens/cachorro/racao/racao-umida-hills-ad-para-caes-e-gatos-urgent-care-156g.jpg"
-              alt=""
+              src="./imagens/cachorro/racao/racao-adulto-special-15kg-golden-3310549-15kg.jpg"
+              alt="ração golden adulto, 15 quilos"
               srcset=""
               class="img-produto-index"
-            />
+            /></a>
             <h2>
-              Ração Úmida Hills Prescription Diet A/D Cuidados Críticos para
-              Cães e Gatos - 156g
+              Ração Golden Special para Cães Adultos Frango e Carne 15 kg
             </h2>
-            <h3>R$ 28,90</h3>
+            <h3>R$ 145,30</h3>
           </div>
           <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
+            <a href="./produtoCachorro.html">
             <img
-              src="./imagens/cachorro/racao/depara-sache-sranplus-gourmet-cao-adulto-frango.jpg"
-              alt=""
+              src="./imagens/cachorro/racao/racao-adulto-special-15kg-golden-3310549-15kg.jpg"
+              alt="ração golden adulto, 15 quilos"
               srcset=""
               class="img-produto-index"
-            />
-            <h2>Ração Úmida Gran Plus Cães Adultos Frango 100g</h2>
-            <br />
-            <h3>R$ 3,50</h3>
+            /></a>
+            <h2>
+              Ração Golden Special para Cães Adultos Frango e Carne 15 kg
+            </h2>
+            <h3>R$ 145,30</h3>
           </div>
           <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
+            <a href="./produtoCachorro.html">
             <img
-              src="./imagens/cachorro/petiscos/Cookie-fit-250g.jpg"
-              alt=""
+              src="./imagens/cachorro/racao/racao-adulto-special-15kg-golden-3310549-15kg.jpg"
+              alt="ração golden adulto, 15 quilos"
               srcset=""
               class="img-produto-index"
-            />
-            <h2>Cookie Premier Fit Adultos Frango com Batata Doce 250g</h2>
-            <br />
-            <h3>R$ 16,90</h3>
+            /></a>
+            <h2>
+              Ração Golden Special para Cães Adultos Frango e Carne 15 kg
+            </h2>
+            <h3>R$ 145,30</h3>
           </div>
           <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
+            <a href="./produtoCachorro.html">
             <img
-              src="./imagens/cachorro/petiscos/cookie-premier-250g.jpg"
-              alt=""
+              src="./imagens/cachorro/racao/racao-adulto-special-15kg-golden-3310549-15kg.jpg"
+              alt="ração golden adulto, 15 quilos"
               srcset=""
               class="img-produto-index"
-            />
-            <h2>Cookie Premier Cães Filhotes Frutas Vermelhas e Aveia 250g</h2>
-            <br />
-            <h3>R$ 16,39</h3>
+            /></a>
+            <h2>
+              Ração Golden Special para Cães Adultos Frango e Carne 15 kg
+            </h2>
+            <h3>R$ 145,30</h3>
           </div>
           <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
+            <a href="./produtoCachorro.html">
             <img
-              src="./imagens/cachorro/petiscos/JOY_COMBO_CARNE_200g.jpg"
-              alt=""
+              src="./imagens/cachorro/racao/racao-adulto-special-15kg-golden-3310549-15kg.jpg"
+              alt="ração golden adulto, 15 quilos"
               srcset=""
               class="img-produto-index"
-            />
-            <h2>Petisco Bifinho Joy Beef Carne 200g</h2>
-            <br />
-            <h3>R$ 10,49</h3>
+            /></a>
+            <h2>
+              Ração Golden Special para Cães Adultos Frango e Carne 15 kg
+            </h2>
+            <h3>R$ 145,30</h3>
           </div>
           <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
+            <a href="./produtoCachorro.html">
             <img
-              src="./imagens/cachorro/petiscos/Orelha-Bolvina.jpg"
-              alt=""
+              src="./imagens/cachorro/racao/racao-adulto-special-15kg-golden-3310549-15kg.jpg"
+              alt="ração golden adulto, 15 quilos"
               srcset=""
               class="img-produto-index"
-            />
-            <h2>Orelha Bovina LL Pet Único</h2>
-            <br />
-            <h3>R$ 4,90</h3>
+            /></a>
+            <h2>
+              Ração Golden Special para Cães Adultos Frango e Carne 15 kg
+            </h2>
+            <h3>R$ 145,30</h3>
           </div>
           <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
+            <a href="./produtoCachorro.html">
             <img
-              src="./imagens/cachorro/petiscos/Osso-Natural-Bonapet-3.jpg"
-              alt=""
+              src="./imagens/cachorro/racao/racao-adulto-special-15kg-golden-3310549-15kg.jpg"
+              alt="ração golden adulto, 15 quilos"
               srcset=""
               class="img-produto-index"
-            />
-            <h2>Osso Natural Bona Pet 3"</h2>
-            <br />
-            <h3>R$ 7,90</h3>
+            /></a>
+            <h2>
+              Ração Golden Special para Cães Adultos Frango e Carne 15 kg
+            </h2>
+            <h3>R$ 145,30</h3>
           </div>
           <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
+            <a href="./produtoCachorro.html">
             <img
-              src="./imagens/cachorro/brinquedos/bola-media-extra-forte.jpg"
-              alt=""
+              src="./imagens/cachorro/racao/racao-adulto-special-15kg-golden-3310549-15kg.jpg"
+              alt="ração golden adulto, 15 quilos"
               srcset=""
               class="img-produto-index"
-            />
-            <h2>Bola Extra Forte de Borracha Maciça LCM M</h2>
-            <h3>R$ 19,90</h3>
+            /></a>
+            <h2>
+              Ração Golden Special para Cães Adultos Frango e Carne 15 kg
+            </h2>
+            <h3>R$ 145,30</h3>
           </div>
           <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
+            <a href="./produtoCachorro.html">
             <img
-              src="./imagens/cachorro/brinquedos/Brinquedo-Pelucia-Macaco-Chalesco.jpg"
-              alt=""
+              src="./imagens/cachorro/racao/racao-adulto-special-15kg-golden-3310549-15kg.jpg"
+              alt="ração golden adulto, 15 quilos"
               srcset=""
               class="img-produto-index"
-            />
-            <h2>Brinquedo Pelúcia Macaco Chalesco Único</h2>
-            <h3>R$ 35,90</h3>
-          </div>
-          <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
-            <img
-              src="./imagens/cachorro/brinquedos/Brinquedo-Pelucia-Sapo-Chalesco.jpg"
-              alt=""
-              srcset=""
-              class="img-produto-index"
-            />
-            <h2>Brinquedo Pelúcia Sapo Chalesco Único</h2>
-            <h3>R$ 39,90</h3>
-          </div>
-          <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
-            <img
-              src="./imagens/cachorro/brinquedos/Durabone-Osso-Bege-7kg.jpg"
-              alt=""
-              srcset=""
-              class="img-produto-index"
-            />
-            <h2>Brinquedo Osso Durabone Bege Odontopet Até 7kg</h2>
-            <h3>R$ 24,90</h3>
-          </div>
-          <div class="produto-galeria-index">
-            <a href="http://www.google.com.br"></a>
-            <img
-              src="./imagens/cachorro/brinquedos/IMAGEM-CENOURA-Tratada.jpg"
-              alt=""
-              srcset=""
-              class="img-produto-index"
-            />
-            <h2>Mordedor Nylon Cenoura e Graveto Buddy Toys Único</h2>
-            <h3>R$ 99,90</h3>
+            /></a>
+            <h2>
+              Ração Golden Special para Cães Adultos Frango e Carne 15 kg
+            </h2>
+            <h3>R$ 145,30</h3>
           </div>
         </div>
       </div>
       <a href="#" class="scroll-to-top"><i class="fa-solid fa-arrow-up"></i></a>
     </main>
-
-    <!-- Inicio do footer -->
-
-    <footer class="footerSite">
-      <div class="newsletter">
-        <h4>Como podemos ajudar você?</h4>
-        <p>Acompanhe todas novidades e promoções.</p>
-        <form action="confirmarNewsletter">
-          <input
-            type="email"
-            placeholder="Digite aqui seu email."
-            required="required"
-            class="emailNewsletter"
-            name="email"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-          />
-          <input type="submit" value="Confirmar" class="botaoConfirmar" />
-        </form>
-      </div>
-
-      <div class="politicas">
-        <h4>Políticas</h4>
-        <ul>
-          <a href="linkPrivacidade">Aviso de privacidade</a>
-        </ul>
-        <ul>
-          <a href="linkCookies">Política de Cookies</a>
-        </ul>
-        <ul>
-          <a href="linkEntregaDevolucao">Política de entrega e devolução</a>
-        </ul>
-        <ul>
-          <a href="linkPoliticaDeCompra">Política de compra</a>
-        </ul>
-      </div>
-
-      <div class="formasDePagamento">
-        <h4>Formas de pagamento</h4>
-        <div class="tiposPagamentos">
-          <img
-            src="imagens/cartaoMaster.png"
-            alt="cartão master card"
-            height="30px"
-            width="45px"
-          />
-          <img
-            src="imagens/cartaoVisa.png"
-            alt="cartão visa"
-            height="30px"
-            width="45px"
-          />
-          <img
-            src="imagens/boletoBancario.png"
-            alt="boleto"
-            height="30px"
-            width="45px"
-          />
-        </div>
-      </div>
-
-      <div class="redesSociais">
-        <h4>Siga nossas redes sociais</h4>
-        <div class="tiposRedesSociais">
-          <a href="linkInstagram" target="_blank"
-            ><img
-              src="imagens/logoInstagram.png"
-              alt="nosso instagram"
-              height="24px"
-              width="24px"
-          /></a>
-          <a href="linkFacebook" target="_blank"
-            ><img
-              src="imagens/logoFacebook.png"
-              alt="nosso facebook"
-              height="24px"
-              width="24px"
-          /></a>
-          <a href="linkWhatsapp" target="_blank"
-            ><img
-              src="imagens/logoWhatsapp.png"
-              alt="nosso whatsapp"
-              height="24px"
-              width="24px"
-          /></a>
-        </div>
-      </div>
-    </footer>
-
-    <script src="./app/app.js"></script>
+    <!-- Final Main -->
+    <div id="footer"></div>
   </body>
 </html>

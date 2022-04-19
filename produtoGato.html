@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/produto.css" />
+    <title>PARAPETS - Ração Premier Seleção Natural Gatos Castrados Frango Korin 1,5kg</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <!-- inicio main -->
+    <main>
+      <div class="container-produtos">
+        <div class="lado-esquerdo">
+          <img class="imagem-produto" src="./imagens/gato/racao/Gato-castrado-75kg.jpg" alt="ração premier seleção natural para gatos castrados, frango korin, 1,5 quilos">
+
+        <div class="info-produtos">
+          <h1>Ração Premier Seleção Natural Gatos Castrados Frango Korin 1,5 kg</h1>
+          <div class="informacao-produtos">
+            <h2>Informações</h2>
+            <ul>
+              <li>Fórmula específica para gatos castrados;</li>
+              <li>Indicado para gatos acima de 6 meses de idade;</li>
+              <li>Suporte às defesas naturais;</li>
+              <li>Proteínas Korin;</li>
+              <li>Controle do pH urinário;</li>
+              <li>Auxilia no controle de peso;</li>
+              <li>Reduz o odor das fezes.</li>
+            </ul>
+          </div>
+          </div>
+
+       </div>
+      <div class="lado-direito">
+         <span>R$ 45,70</span>
+
+         <div data-app="product.quantity" id="quantidade">
+          <span id="span_erro_carrinho" class="blocoAlerta" style="display:none;">Selecione uma opção para variação do produto</span>
+          <label>Quantidade:</label> 
+          <input class="quantidade-botao" type="button" id="plus" value='-' onclick="process(-1)" />
+          <input id="quant" name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+          <input class="quantidade-botao" type="button" id="minus" value='+' onclick="process(1)">
+        </div>
+        <button type="submit">Comprar</button>
+
+
+        <!-- <form method="get" action=".">
+          <label>Cep:
+          <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                 onblur="pesquisacep(this.value);" /></label><br />
+        </form> -->
+
+      </div>
+    </div>
+
+      <div class="inferior">
+        <h3>Detalhes do produto:</h3>
+
+        <h2>Ração Premier Seleção Natural Gatos Castrados Frango Korin</h2>
+        <p>A <strong>Ração Premier Seleção Natural Gatos Castrados Frango Korin</strong> é recomendado para gatos castrados a partir de 6 meses de idade.
+
+          Este produto oferece Suporte às defesas naturais, promove o cuidado do trato urinário e auxilia no controle do peso, através de teores moderados de calorias e gorduras, além da L-carnitina que auxilia na conservação da massa muscular.
+          
+          Oferece em sua composição a exclusiva fonte de proteínas Korin, um diferenciado complexo de vegetais e ovos provenientes de galinhas livres de gaiolas (cage free).
+          
+          A combinação de ingredientes especiais com o alto aproveitamento dos nutrientes reduz o odor e volume das fezes, minimizando possíveis inconvenientes de uma vida dentro de casa.
+          </p>
+
+        <h2>Ingredientes</h2>
+        <p>Farinha de vísceras de frango - Korin, proteína isolada de soja, proteína isolada de suíno, ovo desidratado - proveniente de galinhas livres de gaiolas (0,5%), glúten de milho – não transgênico, quirera de arroz, gordura de frango, óleo de peixe, complexo de vegetais – 7,0% (abóbora, alecrim, cenoura, extrato de Marigold, polpa de beterraba branca, quinoa), aveia, farinha de mandioca branca, aditivo acidificante, antioxidantes BHA e BHT (0,012%), bentonita, beta glucano, cloreto de potássio, DL-metionina, hexametafosfato de sódio, extrato de yucca (0,06%), hidrolisado de suíno e frango, levedura autolisada de cana-de-açúcar, L-carnitina, mananoligossacarídeos, taurina, vitamina A, vitamina B12, vitamina C, vitamina D3, vitamina E, vitamina K3, ácido fólico, ácido pantotênico, biotina, cloreto de colina, niacina, piridoxina, riboflavina, tiamina, cobre aminoácido quelato, ferro aminoácido quelato, iodeto de potássio, manganês aminoácido quelato, selênio metionina, sulfato de cobre, sulfato de ferro, sulfato de manganês, sulfato de zinco, zinco aminoácido quelato.
+          </p>
+
+          <h2>Devo castrar o meu pet?</h2>
+          <p>Castrar o animal é muito importante, pois previne doenças ligadas à reprodução, além de deixá-lo mais tranquilo. Converse com o veterinário.</p>
+
+          <h2>Siga as instruções da embalagem</h2>
+        <p>Por mais que este alimento seja reduzido em gorduras e calorias com foco no metabolismo mais lento do animal castrado, é muito importante que as quantidades diárias recomendadas pelo fabricante sejam seguidas. Isso evita problemas de saúde e sobrepeso.</p>
+
+        <h2>Premium ou Super Premium?</h2>
+        <p>Alimentos Super Premium são mais balanceados e têm ingredientes mais nobres do que as rações Premium. Na Cobasi, você encontra a Ração Premier Seleção Natural Gatos Castrados Frango Korin com preço especial.</p>
+      
+      </div>
+  
+    </main>
+    <!-- final main -->
+    <div id="footer"></div>
+    <script src="./app/produto.js"></script>
+  </body>
+</html>
