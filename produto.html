@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/produto.css" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <!-- inicio main -->
+    <main>
+      <div class="container-produtos">
+        <div class="lado-esquerdo">
+          <img class="imagem-produto" src="./imagens/cachorro/racao/racao-adulto-special-15kg-golden-3310549-15kg.jpg" alt="ração golden adulto, 15 quilos">
+
+        <div class="info-produtos">
+          <h1>Ração Golden Special para Cães Adultos Frango e Carne 15 kg</h1>
+          <div class="informacao-produtos">
+            <h2>Informações</h2>
+            <ul>
+              <li>Indicada para cães adultos;</li>
+              <li>Blend de proteínas;</li>
+              <li>Músculos mais fortes;</li>
+              <li>Redução do odor das fezes;</li>
+              <li>Mais rendimento por quilo;</li>
+              <li>Saúde e vitalidade;</li>
+              <li>Livre de aromatizantes e corantes artificiais.</li>
+            </ul>
+          </div>
+          </div>
+
+       </div>
+      <div class="lado-direito">
+         <span>R$ 145,30</span>
+
+         <div data-app="product.quantity" id="quantidade">
+          <span id="span_erro_carrinho" class="blocoAlerta" style="display:none;">Selecione uma opção para variação do produto</span>
+          <label>Quantidade:</label> 
+          <input class="quantidade-botao" type="button" id="plus" value='-' onclick="process(-1)" />
+          <input id="quant" name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+          <input class="quantidade-botao" type="button" id="minus" value='+' onclick="process(1)">
+        </div>
+        <button type="submit">Comprar</button>
+
+
+        <!-- <form method="get" action=".">
+          <label>Cep:
+          <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                 onblur="pesquisacep(this.value);" /></label><br />
+        </form> -->
+
+      </div>
+    </div>
+
+      <div class="inferior">
+        <h3>Detalhes do produto:</h3>
+
+        <h2>Ração Golden Special para Cães Adultos Frango e Carne</h2>
+        <p>Preparada com nobres ingredientes, a <strong>Ração Golden Special para Cães Adultos Frango e Carne</strong> é o alimento ideal para manter o seu cão saudável. Além de render mais por quilograma, ela é livre de corantes e aromatizantes artificiais, proporcionando uma dieta mais balanceada.
+        
+          A Ração Golden Special também ajuda a eliminar o odor das fezes, graças à sua fórmula que é rica em vitaminas e minerais. Isso faz com que a musculatura do animal sempre esteja fortalecida, o que consequentemente torna o cão mais ativo e menos propenso a doenças.          
+         
+          Produzida pela Premier Pet – que é referência no mercado pet -, a Ração Golden Special possui um delicioso sabor de frango e carne. Esse blend de proteínas satisfaz amplamente o paladar dos cães.
+          </p>
+
+        <h2>Ingredientes</h2>
+        <p>Farinha de vísceras de frango, farinha de carne e ossos de bovino, grão de milho*, quirera de arroz, polpa desidratada de beterraba, farelo de arroz desengordurado, gordura de frango, cloreto de potássio, cloreto de sódio, ácido propiônico, bentonita, BHA (Butilhidroxianisol), BHT (Butilhidroxitolueno), extrato de yucca (0,04%), hidrolisado de fígado de aves e suíno, acetato de DL-alfa tocoferol, acetato de retinol, ácido ascórbico monofosfato, ácido fólico, ácido pantotênico, biotina, bissulfito de menadiona nicotinamida, cianocobalamina, cloreto de colina, colecalciferol, niacina (ácido nicotínico), piridoxina, riboflavina, tiamina, iodeto de cálcio, selenometionina hidroxi análoga, sulfato de cobre pentahidratado, sulfato de ferro, sulfato de manganês, sulfato de zinco monohidratado.
+          <i>*Contém milho transgênico (espécies doadoras de gene: Bacillus thuringiensis, Agrobacterium tumefaciens, Streptomyces viridochromogenes, Zea mays).</i>
+          </p>
+
+          <h2>Evite o sobrepeso</h2>
+          <p>É muito importante que você siga as quantidades diárias recomendadas pelo fabricante. Fique atento também ao nível de atividades do seu animal, o que pode fazer com que ele precise de uma quantidade maior de alimento. Isso evita que o animal tenha sobrepeso.</p>
+
+          <h2>Ração Golden Special para Cães Adultos Frango e Carne é completa?</h2>
+        <p>A ração não só pode como deve ser a única fonte de alimentação do animal. Elas possuem a quantidade de nutrientes que o pet precisa. Para que isso ocorra, siga as recomendações de cada produto.
+
+          Por mais que os animais adorem a comida que nós consumimos e que às vezes seja difícil recusar aquele pedacinho de comida para o cachorro, evite fazer isso. Um simples pedaço de carne pode fazer com que ele recuse a comer a ração, além de possuir temperos que não recomendadas para os animais.</div>
+  
+    </main>
+    <!-- final main -->
+    <div id="footer"></div>
+    <script src="produto.js"></script>
+  </body>
+</html>
