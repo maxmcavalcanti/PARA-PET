@@ -8,14 +8,18 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style/login.css" />
-    <title>Sign in & Sign up Form</title>
+    <title>Entre na sua conta & Cadastre-se Form</title>
   </head>
   <body>
-    <div class="container">
-      <div class="forms-container">
+    <div class="containerLogin">
+      <button class="btn-back" onclick="location.href='/index.html'">
+        Voltar
+      </button>
+
+      <div class="forms-containerLogin">
         <div class="signin-signup">
           <form action="#" class="sign-in-form">
-            <h2 class="title">Sign in</h2>
+            <h2 class="title">Entre na sua conta</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
               <input type="text" placeholder="Username" />
@@ -25,7 +29,9 @@
               <input type="password" placeholder="Password" />
             </div>
             <input type="submit" value="Login" class="btn solid" />
-            <p class="social-text">Or Sign in with social platforms</p>
+            <p class="social-text">
+              Ou entre na sua conta por meio da rede social
+            </p>
             <div class="social-media">
               <a href="#" class="social-icon">
                 <i class="fab fa-facebook-f"></i>
@@ -42,7 +48,7 @@
             </div>
           </form>
           <form action="#" class="sign-up-form">
-            <h2 class="title">Sign up</h2>
+            <h2 class="title">Cadastre-se</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
               <input type="text" placeholder="Username" />
@@ -55,8 +61,8 @@
               <i class="fas fa-lock"></i>
               <input type="password" placeholder="Password" />
             </div>
-            <input type="submit" class="btn" value="Sign up" />
-            <p class="social-text">Or Sign up with social platforms</p>
+            <input type="submit" class="btn" value="Cadastre-se" />
+            <p class="social-text">Ou cadastre-se por meio da rede social</p>
             <div class="social-media">
               <a href="#" class="social-icon">
                 <i class="fab fa-facebook-f"></i>
@@ -75,28 +81,37 @@
         </div>
       </div>
 
-      <div class="panels-container">
+      <div class="panels-containerLogin">
         <div class="panel left-panel">
           <div class="content">
-            <h3>New here ?</h3>
+            <h3>Novo por aqui?</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
-              ex ratione. Aliquid!
+              Faça parte da maior comunidade amante dos animais e ganhe
+              descontos exclusivos!
             </p>
-            <button class="btn transparent" id="sign-up-btn">Sign up</button>
+            <button class="btn transparent" id="sign-up-btn">
+              Cadastre-se
+            </button>
           </div>
-          <img src="imagens/cadastro/log.svg" class="image" alt="" />
+          <img
+            src="imagens/cadastro/log.svg"
+            class="image"
+            alt="Desenho de uma mulher utilizando um vestido roxo, ao lado de um gato amarelo com um tapa olho, que está dentro de um troféu cinza. A mulher está com os braços levantados como se estivesse comemorando."
+          />
         </div>
         <div class="panel right-panel">
           <div class="content">
-            <h3>One of us ?</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              laboriosam ad deleniti.
-            </p>
-            <button class="btn transparent" id="sign-in-btn">Sign in</button>
+            <h3>Já é um ParaPetLover?</h3>
+            <p>Entre na sua conta clicando no botão abaixo!</p>
+            <button class="btn transparent" id="sign-in-btn">
+              Entre na sua conta
+            </button>
           </div>
-          <img src="imagens/cadastro/cad.svg" class="image" alt="" />
+          <img
+            src="imagens/cadastro/cad.svg"
+            class="image"
+            alt="Desenho de uma menina utilizando um casaco roxo com um desenho de coração branco no centro. Ela utiliza oculos de sol redondos e roxos, enquanto carrega um celular na mão e faz um sinal da paz na outra. Ao lado dela encontra-se um cachorro amarelo."
+          />
         </div>
       </div>
     </div>

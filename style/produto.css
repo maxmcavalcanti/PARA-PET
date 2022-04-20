@@ -144,4 +144,7 @@ button, input, optgroup, select, textarea {
 
 @media screen and (max-width: 500px) {
 
+.imagem-produto{
+  width: 100%;
+} 
 }
