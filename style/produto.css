@@ -130,7 +130,7 @@ button, input, optgroup, select, textarea {
 }
 /* Final barra de vantangens */
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1024px) {
   .container-produtos, .lado-esquerdo {
     flex-direction: column;
     justify-content: center;
@@ -140,11 +140,16 @@ button, input, optgroup, select, textarea {
   .inferior {
     width: 100%;
   }
-}
 
 @media screen and (max-width: 500px) {
+<<<<<<< HEAD
 
 .imagem-produto{
   width: 100%;
 } 
+=======
+ .imagem-produto {
+  width: 100%;
+ }
+>>>>>>> fe51de08732c2db097ac1c5203ad3c6ce6796ddf
 }
