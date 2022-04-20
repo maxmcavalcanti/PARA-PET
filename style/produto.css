@@ -142,14 +142,8 @@ button, input, optgroup, select, textarea {
   }
 
 @media screen and (max-width: 500px) {
-<<<<<<< HEAD
 
 .imagem-produto{
   width: 100%;
 } 
-=======
- .imagem-produto {
-  width: 100%;
- }
->>>>>>> fe51de08732c2db097ac1c5203ad3c6ce6796ddf
 }
